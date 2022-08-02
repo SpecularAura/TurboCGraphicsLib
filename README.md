@@ -9,8 +9,10 @@ This repo contains graphics.h source code
 - libgbi.a will be found in the bin subdirectory
 
 ### Using it in programs (Command Line and VSCode)
-- Copy graphics.h, Makefile from the root directory and libgbi.a from the bin subdirectory to the location of the program which reqires graphics.h
+- Copy graphics.h, Makefile from the root directory and libgbi.a from the bin subdirectory to the location of the program which requires graphics.h
 - To build the exe file execute the command `ming32-make SRC=(Name of your source file)`  
-For e.g. if your source file is named TestGraphics.cpp Then the command would be `ming32-make SRC=TestGraphics.cpp`
-- 
+For example, if your source file is named TestGraphics.cpp Then the command would be `ming32-make SRC=TestGraphics.cpp`
+- Run the executable  
+In the example Powershell: `.\TestGraphics.exe`  
+Command Prompt: `TestGraphics.exe`
   
