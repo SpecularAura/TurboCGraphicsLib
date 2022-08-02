@@ -16,3 +16,4 @@ For example, if your source file is named TestGraphics.cpp Then the command woul
 In the example Powershell: `.\TestGraphics.exe`  
 Command Prompt: `TestGraphics.exe`
   
+### Using it in Codeblocks (To Be written)
