@@ -1,13 +1,15 @@
-echo off
+@echo off
 cd C:\%SRCDIR%
 make clean
 rem -nBIN to specify output directory as bin
-tcc %SRC%.%FEXT% C:\TURBOC3\LIB\GRAPHICS.LIB && cls || goto end
-%SRC%.exe
-echo on
+tcc -nBIN %SRC%.%FEXT% C:\TURBOC3\LIB\GRAPHICS.LIB > errlog.txt
+if ERRORLEVEL GT 0 goto end
+cls
+BIN\%SRC%.exe
+quit
 
 :end
 cls
 color bright red on black
-tcc %SRC%.%FEXT% C:\TURBOC3\LIB\GRAPHICS.LIB
+type errlog.txt
 color bright white on black

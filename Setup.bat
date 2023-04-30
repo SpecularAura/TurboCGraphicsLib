@@ -21,11 +21,16 @@ call makeSettings.bat
 @REM echo } >> settings.json
 rem type settings.json
 mkdir "%srcdir%\.vscode"
+mkdir "%srcdir%\BIN"
 copy settings.json "%srcdir%\.vscode"
 copy tasks.json "%srcdir%\.vscode"
 copy Makefile "%srcdir%"
+copy Scripts\INIT.BAT ".\TURBOC3\BIN"
+copy Scripts\RUN.BAT ".\TURBOC3\BIN"
+copy Scripts\SETSRC.BAT ".\TURBOC3\BIN"
 del settings.json
 echo Setup Has Completed
 pause
-cmd /c "code Code"
+cmd /k "code Code"
 endlocal
+quit
