@@ -25,7 +25,7 @@ As of now it can only run on Windows as they are batch scripts.
 There are a lot of problems with TURBOC which are particularly annoying and can't be changed. 
 For Computer Graphics we are forced to use it as there are no alternative libraries made for gcc or other modern compilers.
 Here are some issues listed out:
-- Automatic casting doesn't work as intended: 
+- Implicit casting doesn't work as intended: 
     When casting from a float to integer or vice versa we have to explicitly cast it, if left upto to the compiler for it a lot of weird behaviour shows up.
     
 - Declaring variables before any other statement can be executed.
