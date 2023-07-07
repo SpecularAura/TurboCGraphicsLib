@@ -1,0 +1,21 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"label": "Run",
+			"command": "${config:MOUNTDIR}\\exec.bat",
+			"args": [
+				"${config:MOUNTDIR}",
+				"${relativeFile}",
+				"${config:SRCDIR}"
+			],
+			"problemMatcher": [],
+			"isBackground": true,
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		}
+	]
+}
