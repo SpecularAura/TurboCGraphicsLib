@@ -11,6 +11,7 @@ mkdir %srcdir%
 call "%setupdir%\makeConfig.bat"
 set "mountdir=%mountdir:\=\\%" 
 call "%setupdir%\makeSettings.bat"
+copy "%setupdir%\exec.bat" "."
 mkdir "%srcdir%\.vscode"
 mkdir "%srcdir%\BIN"
 copy "%setupdir%\task.bat" "%srcdir%"
